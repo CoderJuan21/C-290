@@ -1,0 +1,99 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.12970841562477878 -0.07024062822385863 -0.9890611614368584 4.125016986645527
+  position 3.0998285053563253 -1.442872761553301 1.3910778709565024
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 6 3
+  floorAppearance OsbWood {
+  }
+}
+WoodenBox {
+  translation 1.5 -0.4 0.3
+}
+UR5e {
+  hidden position_0_0 -0.00025148118069017545
+  hidden rotation_1 0 0 -1 0.00025148118105755416
+  hidden position_1_0 0.00014937357546459742
+  hidden rotation_2 0 1 0 1.5709453735754642
+  hidden position_2_0 4.8851685609764176e-05
+  hidden rotation_3 0 1 0 4.885168832515643e-05
+  hidden position_3_0 -3.355234979078114e-05
+  hidden rotation_4 0 1 0 1.5707624476502093
+  hidden position_4_0 1.2996986088247646e-05
+  hidden rotation_5 0 0 0.9999999999999999 1.2996990631101554e-05
+  hidden position_5_0 1.3124954044397692e-05
+  hidden rotation_6 0 1 0 1.312493736588091e-05
+  hidden position_7_0 -2.1480438562774544e-05
+  hidden position_7_1 -2.147892059460526e-05
+  hidden position_7_2 0.049500003726754345
+  hidden rotation_8 0.7068252251081076 0.7073882251845811 -4.591458495065662e-06 3.141582804993765
+  hidden position_8_0 0.049511651541155256
+  hidden rotation_9 0 0 1 1.1651564685910979e-05
+  hidden position_9_0 5.378125430143475e-10
+  hidden rotation_10 0 0 -1 0.5199999994621873
+  hidden position_10_0 -0.05229999999991719
+  hidden rotation_12 0.7068252251081057 0.7073882251845864 -4.590922025860417e-06 3.1415828060675577
+  hidden position_12_0 0.04951165229685014
+  hidden rotation_13 0 0 1 1.1652326943506259e-05
+  hidden position_13_0 5.377519821305115e-10
+  hidden rotation_14 0 0 -1 0.5199999994622478
+  hidden position_14_0 -0.0522999999998941
+  hidden position_16_0 5.418254121261367e-10
+  hidden rotation_17 0 0 -1 0.5199999994581737
+  hidden position_17_0 -0.05230000000006839
+  translation 1.5 -0.4 0.6
+  toolSlot [
+    Robotiq3fGripper {
+    }
+    DistanceSensor {
+      translation 0 0.095 0.04
+      rotation 0 0 1 1.5707996938995747
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+    }
+  ]
+}
+ConveyorBelt {
+  hidden translation_1 -1.569382781396795e-05 0 0.37493732546935904
+  hidden rotation_1 -2.5134174758080804e-14 1 -9.189912770097508e-14 4.293093918498345e-05
+  translation 0 0.4 0
+  size 5 0.5 0.5
+}
+Solid {
+  translation 2.450355788490988 0.4 0.5494425497910016
+  rotation -6.712343795544694e-14 -1 6.835838350510631e-13 0.0008173191063605433
+  children [
+    DEF red_box Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  boundingObject USE red_box
+  physics Physics {
+  }
+  linearVelocity 5.759404232172932e-07 9.156592402586747e-17 3.4953324223913703e-07
+  angularVelocity -4.796163466380675e-15 1.1131963193898349e-05 -2.3228323913167803e-16
+}
